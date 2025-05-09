@@ -76,13 +76,13 @@ const renderWeatherApp = (data) => {
 
   switch (data.main) {
     case "sunny":
-      info_img.setAttribute("src", "/img/sunny.svg");
+      info_img.setAttribute("src", "img/sunny.svg");
       break;
     case "clouds":
-      info_img.setAttribute("src", "/img/cloud.svg");
+      info_img.setAttribute("src", "img/cloud.svg");
       break;
     default:
-      info_img.setAttribute("src", "/img/sunny.svg");
+      info_img.setAttribute("src", "img/sunny.svg");
   }
 };
 console.log("hellow")
