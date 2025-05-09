@@ -1,0 +1,148 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4a4a4a;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p,span {
+    margin: 0;
+    padding: 0;
+}
+
+#weather__window {
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    background: linear-gradient(90deg,rgba(16, 48, 64, 1) 0%, rgba(93, 199, 87, 1) 64%, rgba(237, 221, 83, 1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 10px 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+}
+
+#search__input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+    margin-right: 80px;
+}
+
+#search__input::placeholder {
+    color: black;
+}
+
+#search__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.info__humidity {
+    display: grid;
+    gap: 0 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.info__humidity>img {
+    grid-row: 1 / 3;
+}
+
+.info__humidity>span,p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.info__speed {
+    display: grid;
+    gap: 0 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.info__speed>img {
+    grid-row: 1 / 3;
+}
+
+.info__speed>span,p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info__img>img {
+    width: 200px;
+    margin: 15px 0;
+}
+
+#temp {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.info__name {
+    margin: 15px 0;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes error {
+    0% {
+        border: 1px solid transparent;
+    }
+    50% {
+        border: 1px solid red;
+    }
+    100% {
+        border: 1px solid transparent;
+    }
+}
+
+.animation-error {
+    animation: error 2s ease-in-out 1;
+}
+
+#location__button {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+

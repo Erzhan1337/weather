@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="weather__window">
+      <form id="search">
+        <input
+          type="text"
+          placeholder="Enter the name of city"
+          id="search__input"
+        />
+        <button type="button" id="location__button">
+          <img src="/img/location.svg" alt="" width="30px">
+        </button>
+        <button type="button" id="search__button">
+          <img src="/img/search.svg" alt="search" width="30px" />
+        </button>
+      </form>
+      <div class="info none">
+        <div class="info__img">
+          <img src="/img/sunny.svg" alt="" width="100px" class="img"/>
+        </div>
+        <div class="info__temp">
+          <span id="temp"></span><span id="temp">°C</span>
+        </div>
+        <div class="info__name">
+          <span id="name"></span>
+        </div>
+        <div class="extra-info">
+          <div class="info__humidity">
+            <img src="/img/humidity.svg" alt="" width="50px" />
+            <span id = 'humidity'></span>
+            <p>Humidity</p>
+          </div>
+          <div class="info__speed">
+            <img src="/img/wind.svg" alt="" width="50px" />
+            <span id="speed"></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
